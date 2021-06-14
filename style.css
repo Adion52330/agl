@@ -141,4 +141,7 @@ footer {
     justify-content: center;
     /*padding-right: 15vh;*/
   }
+  #adi{
+    padding-left: 20px;
+  }
 }
