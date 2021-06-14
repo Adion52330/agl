@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>About | Adion Grocery Lists</title>
+  </head>
+
+  <body bgcolor="lightgray">
+    <header>
+      <h1>Welcome to AGL</h1>
+      <nav>
+        <ul id="adi">
+          <li><a href="index.html">Todo List Maker</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="name" style="display: flex">
+      <h3>
+        <p id="oo" style="color: thistle">
+          Welcome
+          <script>
+            if (localStorage.getItem("name") == null) {
+      document.getElementById("oo").innerHTML = "You need to <a href='index.html'>Login</a>"
+    }else{
+            document.getElementById("oo").innerHTML =
+              "Welcome " + localStorage.getItem("name");
+    }
+          </script>
+        </p>
+      </h3>
+    </section>
+    <main>
+      <h2>Hello Guys!! This is Adion and I made this app so that you can never forget what you need to take from the market. This also remembers your name until and unless you open a new browser. Keep enjoying and stay safe!!</h2>
+    </main>
+    </section>
+    <footer bgcolor="white">
+      <div>
+        <p>
+          &copy; Copyright 2021 Adion Grocery Lists | Created and Designed by
+          <a href="https://aditya52330.github.io/adion/">ADION</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

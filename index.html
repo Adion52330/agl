@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to AGL | Adion Grocery Lists</title>
+  </head>
+
+  <body bgcolor="lightgray">
+    <header>
+      <h1>Welcome to AGL</h1>
+      <nav>
+        <ul id="adi">
+          <li><a href="index.html">Todo List Maker</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="name" style="display: flex">
+      <h3>
+        <p id="oo" style="color: thistle"></p>
+        <form id="gg" onsubmit="return ll()">
+          <label style="color: white">Enter Your Name To Login</label>
+          <input type="text" id="txt2" />
+          <input type="submit" value="LOGIN" />
+        </form>
+      </h3>
+    </section>
+    <section id="todo" style="display: flex; flex-direction: column">
+      <h2>Add The Items in the text box below</h2>
+      <center><ul id="googoo"></ul></center>
+      <center><label style="font-size: 2pc">Enter Here</label></center>
+      <center><input type="text" id="txt1" /></center>
+
+      <center>
+        <input type="submit" value="ADD" id="sub" onclick="adding()" />
+      </center>
+    </section>
+    <footer bgcolor="white">
+      <div>
+        <p>
+          &copy; Copyright 2021 Adion Grocery Lists | Created and Designed by
+          <a href="https://aditya52330.github.io/adion/">ADION</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    if (localStorage.getItem("name") == null) {
+      document.getElementById("oo").style.display = "none";
+    } else if (localStorage.getItem("name") != null) {
+      document.getElementById("oo").innerHTML =
+        "Welcome " + localStorage.getItem("name");
+      document.getElementById("gg").style.display = "none";
+    }
+  </script>
+</html>
