@@ -139,6 +139,6 @@ footer {
   }
   nav {
     justify-content: center;
-    padding-right: 15vh;
+    /*padding-right: 15vh;*/
   }
 }
